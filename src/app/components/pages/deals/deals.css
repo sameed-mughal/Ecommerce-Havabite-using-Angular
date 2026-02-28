@@ -1,0 +1,26 @@
+.btn{
+    background: rgb(112, 0,0);
+    color: white;
+     font-weight:bolder;
+}
+
+.card:hover{
+    box-shadow: 3px 5px 10px rgb(112, 0,0);
+    transition: 0.5s;
+}
+
+.card-text{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.description{
+    font-size: 14px;
+    color: #666;
+    line-height: 1.4;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: bottom 12px; 
+}

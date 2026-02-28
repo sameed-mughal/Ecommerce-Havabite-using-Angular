@@ -1,0 +1,139 @@
+:root {
+        --primary-red: rgba(121, 0, 0, 0.863);
+        --dark-bg: rgba(33, 37, 41, 1); /* Bootstrap dark */
+    }
+
+   body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: flex-end;   /* moves form to right */
+    align-items: center;         /* keeps it vertically centered */
+    padding: 1000px 60px;          /* space from edges */
+    background: linear-gradient(135deg, var(--dark-bg), var(--primary-red));
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+.page-center {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;  /* horizontal center */
+    align-items: center;      /* vertical center */
+    padding: 40px;
+}
+
+    .login-container {
+        width: 500px;
+        background: #ffffff;
+        padding: 60px;
+        border-radius: 18px;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+        
+    }
+
+    .login-container h2 {
+        text-align: center;
+        color: var(--primary-red);
+        font-size: 30px;
+        margin-bottom: 35px;
+    }
+
+    .input-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .input-group i {
+        position: absolute;
+        top: 50%;
+        left: 15px;
+        transform: translateY(-50%);
+        color: #777;
+    }
+
+    .input-group input {
+        width: 100%;
+        padding: 15px 15px 15px 45px;
+        font-size: 16px;
+        border-radius: 18px;
+        border: 1px solid #242222;
+        outline: none;
+    
+    }
+
+    .input-group input:focus {
+        border-color: var(--primary-red);
+    }
+
+    .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 10px;
+        transition: 0.3s;
+    }
+
+    .btn-login {
+        background: var(--primary-red);
+        color: #000000;
+        margin-bottom: 10px;
+    }
+
+    .btn-login:hover {
+        background: rgba(160, 0, 0, 0.95);
+    }
+
+    .forgot-password {
+        text-align: center;
+        margin: 15px 0 25px;
+        font-size: 14px;
+    }
+
+    .forgot-password a {
+        color: #555;
+        text-decoration: none;
+    }
+
+    .forgot-password a:hover {
+        color: var(--primary-red);
+    }
+
+    .login-with {
+        text-align: center;
+        color: #777;
+        margin-bottom: 18px;
+        font-size: 15px;
+    }
+
+    .social-buttons {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+  .facebook,
+.google {
+    flex: 1;
+    border: 2px solid rgba(121, 0, 0, 0.863);
+    box-shadow: 0 6px 15px rgba(121, 0, 0, 0.4);
+}
+
+
+    .facebook:hover,
+    .google:hover {
+        opacity: 0.9;
+    }
+
+   .create-account {
+    background: rgba(121, 0, 0, 0.863);
+    color: #fff;
+    border: none;
+    box-shadow: 0 8px 20px rgba(121, 0, 0, 0.5)
+   }
+

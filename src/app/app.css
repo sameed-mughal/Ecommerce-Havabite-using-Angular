@@ -1,0 +1,13 @@
+.container-fluid{
+    background: #7f75db;
+   
+}
+.nav-item a{
+    color: blue;
+}
+.navbar-brand{
+    color: blue;
+}
+.btn-outlinebtn-success{
+    color:blue;
+}

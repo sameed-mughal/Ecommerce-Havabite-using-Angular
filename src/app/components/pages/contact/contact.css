@@ -1,0 +1,118 @@
+:root {
+    --primary-red: rgba(121, 0, 0, 0.863);
+    --dark-bg: rgba(33, 37, 41, 1);
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, var(--dark-bg), var(--primary-red));
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.page-center {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.feedback-container {
+    width: 1000px;
+    background: #ffffff;
+    padding: 50px;
+    border-radius: 18px;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.6);
+}
+
+.feedback-container h2 {
+    text-align: center;
+    color: var(--primary-red);
+    font-size: 30px;
+    margin-bottom: 35px;
+}
+
+.form-map-wrapper {
+    display: flex;
+    gap: 30px;
+}
+
+.form-section {
+    flex: 1;
+}
+
+.map-section {
+    flex: 1;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group i {
+    position: absolute;
+    top: 18px;
+    left: 15px;
+    color: #777;
+}
+
+.input-group input,
+.input-group textarea {
+    width: 100%;
+    padding: 15px 15px 15px 45px;
+    font-size: 16px;
+    border-radius: 18px;
+    border: 1px solid #242222;
+    outline: none;
+    resize: none;
+}
+
+.input-group input:focus,
+.input-group textarea:focus {
+    border-color: var(--primary-red);
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: 0.3s;
+}
+
+.btn-submit {
+    background: var(--primary-red);
+    color: #ffffff;
+    box-shadow: 0 8px 20px rgba(121, 0, 0, 0.5);
+}
+
+.btn-submit:hover {
+    background: rgba(160, 0, 0, 0.95);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .form-map-wrapper {
+        flex-direction: column;
+    }
+
+    .feedback-container {
+        width: 100%;
+    }
+
+    .map-section {
+        height: 300px;
+    }
+}
